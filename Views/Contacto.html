@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Julian Gomez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/contacto.css">
+    <link rel="preconnsect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" sizes="192x192" href="../favicon.ico" type="image/ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<!-- POR MEDIO DE onload, SIEMPRE QUE CARGUE LA PÁGINA SE INICIO LA FUNCIÓN initMap() -->
+<body onload="initMap()">
+    <div class="contenedor-barra">
+        <h2><a href="../index.html">Ir a Inicio</a></h2>
+        <h2 class="contacto">Contacto JG MUSIC</h2>
+    </div>
+    
+    <!-- CONTENEDOR DEL INPUT PARA AGREGAR UBICACÓN -->
+    <div class="contenedor-ubicacion">
+        <input id="ubicacion" type="text" placeholder="Escribe tu Ubicación para calcular la ruta en Coche">
+    </div>
+
+    <!-- CONTENEDOR DEL MAPA -->
+    <div class="contenedor-mapa">
+        <div id="mapa"></div> 
+        <div id="indicaciones"></div> 
+    </div>
+
+<!-- CONTENEDOR DE LA TABLA -->
+     <div class="contenedor-tabla">
+        <table>
+            <tr>
+                <td class="columna-gris">Dirección</td>
+                <td class="columna-blanca">Paseo de extremadura piso 3</td>
+            </tr>
+            <tr>
+                <td class="columna-gris">Tel</td>
+                <td class="columna-blanca">+34 602 40 30</td>
+            </tr>
+            <tr>
+                <td class="columna-gris">fax</td>
+                <td class="columna-blanca">+34 602 40 30</td>
+            </tr>
+            <tr>
+                <td class="columna-gris">E-mail</td>
+                <td class="columna-blanca">jgmusic@gmail.com</td>
+            </tr>
+            <tr>
+                <td class="columna-gris">Web</td>
+                <td class="columna-blanca">sitio Web</td>
+            </tr>  
+        </table>
+     </div>
+
+     <!-- FOOTER -->
+     <footer class="contenedor-redes">
+        <ul>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/icono-pinterest.png" width="40" title="icono pinterest" height="40" alt="icono pinterest"></a>
+            </li>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/instagram.png"
+                width="40" title="icono instagram" height="40" alt="icono instagram"></a>
+            </li>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/facebook.png" width="40" title="icono facebook" height="40" alt="icon facebook"></a>
+            </li>
+        </ul> 
+        <p><a href="/">Términos de servicio</a></p>
+        <p><a href="/">Politica de privacidad</a></p>
+        <p><a href="/">Politica de cookies</a></p>
+        <p>Paseo de Extremadura, Madrid</p>
+        <p>© 2023 JG MUSIC</p>
+        <p>Versión: v1.0.0</p>
+    </footer>
+    
+     <!-- AGREGAMOS ARCHIVO DE JAVASCRIPT Y EL LINK PARA UTILIZAR LA API DE GOOGLE MAPS -->
+    <script src="../Js/contacto.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAWZ68XK1N6ia9mtzktG6PgT6VbrgJ_N7Y&libraries=places&callback=initMap">
+    </script>
+</body>
+</html>

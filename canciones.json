@@ -1,0 +1,170 @@
+[
+    {
+        "id": 1,
+        "nombre": "Amarillo",
+        "artista": "J Balbin",
+        "url": "./Musica/Reggaeton/Amarillo_J_balbin.mp3"
+    },
+    
+    {
+        "id": 2,
+        "nombre": "Hawuai",
+        "artista": "Maluma",
+        "url": "./Musica/Reggaeton/Hawuai-Maluma.mp3"
+    },
+
+    {
+        "id": 3,
+        "nombre": "Mix Reggaeton",
+        "artista": "Varios artistas",
+        "url": "./Musica/Reggaeton/Mix_reggaeton_clasico.mp3"
+    },
+
+    {
+        "id": 4,
+        "nombre": "Otro trago",
+        "artista": "Sech",
+        "url": "./Musica/Reggaeton/Otro_trago_Sech.mp3"
+    },
+
+    {
+        "id": 5,
+        "nombre": "Dezco ascend",
+        "artista": "Official audio",
+        "url": "./Musica/Electronica/Dezco_ascend_official_audio.mp3"
+    },
+
+    {
+        "id": 6,
+        "nombre": "Electrónica mix",
+        "artista": "Electrónica mix",
+        "url": "./Musica/Electronica/La_mejor_electronica_del_mundo.mp3"
+    },
+
+    {
+        "id": 7,
+        "nombre": "Que paso te asustate",
+        "artista": "Dj Pilin electronic",
+        "url": "./Musica/Electronica/Que_paso_te_asustaste_Dj_Pilin.mp3"
+    },
+
+    {
+        "id": 8,
+        "nombre": "Played a live",
+        "artista": "Safri Duo",
+        "url": "./Musica/Electronica/Safri_duo_played_a_live.mp3"
+    },
+
+    {
+        "id": 9,
+        "nombre": "Eres mía",
+        "artista": "Romeo Santos",
+        "url": "./Musica/Bachata/Eres_Mía-Romeo-Santos.mp3"
+    },
+
+    {
+        "id": 10,
+        "nombre": "Escuchame",
+        "artista": "José Fonseca",
+        "url": "./Musica/Bachata/Escúchame_Joseph-Fonseca.mp3"
+    },
+
+    {
+        "id": 11,
+        "nombre": "La Bachata",
+        "artista": "Manuel Turizo",
+        "url": "./Musica/Bachata/La_bachata-Manuel-Turizo.mp3"
+    },
+
+    {
+        "id": 12,
+        "nombre": "Necio",
+        "artista": "Romeo Santos",
+        "url": "./Musica/Bachata/Necio-Romeo_santos.mp3"
+    },
+
+    {
+        "id": 13,
+        "nombre": "No voy a llorar",
+        "artista": "Los diablitos",
+        "url": "./Musica/Vallenato/No_voy_a_llorar.mp3"
+    },
+
+    {
+        "id": 14,
+        "nombre": "No sé pedir perdon",
+        "artista": "Rafael Orozco",
+        "url": "./Musica/Vallenato/Nose_pedir_perdon.mp3"
+    },
+
+    {
+        "id": 15,
+        "nombre": "Si no me falla el corazón",
+        "artista": "Los diablitos",
+        "url": "./Musica/Vallenato/Si_no_me_falla_el_corazon.mp3"
+    },
+
+    {
+        "id": 16,
+        "nombre": "Tu asencia",
+        "artista": "Pedro Arroyo",
+        "url": "./Musica/Vallenato/Tu_Ausencia.mp3"
+    },
+
+    {
+        "id": 17,
+        "nombre": "Cómo te hago entender",
+        "artista": "Roberto Roena",
+        "url": "./Musica/Salsa/Como_te_hago_entender.mp3"
+    },
+
+    {
+        "id": 18,
+        "nombre": "Deseandote",
+        "artista": "Frankie Ruiz",
+        "url": "./Musica/Salsa/Deseandote_Frankie_Ruiz.mp3"
+    },
+
+    {
+        "id": 19,
+        "nombre": "Ni siquiera",
+        "artista": "Antonio Cartagena",
+        "url": "./Musica/Salsa/Ni_siquiera-Antonio_Cartagena.mp3"
+    },
+
+    {
+        "id": 20,
+        "nombre": "Una mirada basto",
+        "artista": "Frankie Ruiz",
+        "url": "./Musica/Salsa/Una_mirada_basto-Grupo Niche.mp3"
+    },
+
+    {
+        "id": 21,
+        "nombre": "ACDC rock N roll",
+        "artista": "ACDC rock N roll",
+        "url": "./Musica/Rock/ACDC_rock_N_roll.mp3"
+    },
+
+    {
+        "id": 22,
+        "nombre": "LMFAO party rock",
+        "artista": "Anthem ft Lauren Bennett<",
+        "url": "./Musica/Rock/LMFAO_party_rock_Anthem_ft_Lauren_Bennett.mp3"
+    },
+
+    {
+        "id": 23,
+        "nombre": "Lordi hard rock",
+        "artista": "Hallelujah",
+        "url": "./Musica/Rock/Lordi_hard_rock_hallelujah.mp3"
+    },
+
+    {
+        "id": 24,
+        "nombre": "Sol y Luna",
+        "artista": "Akash",
+        "url": "./Musica/Rock/Sol_y_luna_Akash.mp3"
+    }
+
+]

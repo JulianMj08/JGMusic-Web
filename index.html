@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Julian Gomez">
+    <meta name="JG Music" content="Aplicación web de todo tipo de música, JG Music para disfrutar y vivir la tus canciones de otra forma.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" sizes="192x192" href="./favicon.ico" type="image/ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <title>JG MUSIC</title>
+</head>
+<body>
+    <!-- HEADER SOLO PARA USO MOBILE -->
+    <header>
+        <div class="menu-hamburguesa">
+            <img src="./assets/iconos/menu_10628755.png" width="40" height="40" alt="menu">
+        </div>
+        <div class="titulo-menu">
+            <h2 class="titulo">JG MUSIC</h2>
+        </div>
+    </header>
+
+    <!-- NAVEGACIÓN MENU MOBILE -->
+<div class="contenedor-nav-mobile inactivo">
+    <nav class="contenedor-nav">
+        <ul>
+            <li class="inicio"><img src="./assets/iconos/inicio.png" width="16" height="16" alt="Inicio"><a style="color: blue;" onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#0000ff'" href="#">Inicio</a></li>
+            <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt="Suscribirse"> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Presupuesto.html">Suscribirse</a></li>
+            <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt="Contacto"> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    <div class="contenedor-generos">
+        <h2 class="subtitulo">Géneros</h2>
+        <ul>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="electronica">Electrónica</li>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="reggaeton">Reggaeton</li>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="bachata">Bachata</li>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="vallenato">Vallenato</li>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="salsa">Salsa</li>
+            <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="rock">Rock</li>
+        </ul>
+    </div>  
+</div>
+
+    <!-- BARRA LATERAL EN DONDE CREAREMOS LA BARRA DE NAVEGACION PARA ESCRITORIO -->
+    <div class="contenedor-inicio">
+        <aside>
+            <div class="contenedor-titulo">
+                <h1 class="titulo">JG MUSIC</h1>
+                <img class="icono-pause inactivo" src="./assets/iconos/pause_5644585.png" width="20" height="20" alt="">
+            </div>
+            <nav class="contenedor-nav">
+                <ul>
+                    <li class="inicio"><img src="./assets/iconos/inicio.png" width="16" height="16" alt="Inicio"><a style="color: blue;" onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="#">Inicio</a></li>
+                    <li><img src="./assets/iconos/suscribir.png" width="16" height="16" alt="Suscribirse"> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Presupuesto.html">Suscribirse</a></li>
+                    <li><img src="./assets/iconos/contacto.png" width="16" height="16" alt="Contacto"> <a onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" href="./Views/Contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+    
+            <!-- CREAMOS UNA LISTA DE GÉNEROS MUSICALES CON ENLACE A SU RESPECTIVO GÉNERO MUSICAL -->
+            <div class="contenedor-generos">
+                <h2 class="subtitulo">Géneros</h2>
+                <ul>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="electronica">Electrónica</li>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="reggaeton">Reggaeton</li>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="bachata">Bachata</li>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="vallenato">Vallenato</li>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="salsa">Salsa</li>
+                    <li onmouseover="this.style.color = '#00b0ff'" onmouseout="this.style.color = '#aaaaaa'" class="rock">Rock</li>
+                </ul>
+            </div>        
+    
+            <!-- CONTENIDO DE TEXTO PARA EL USUARIO -->
+            <div>
+                <h3 class="modulo-texto">Disfruta la Música</h3>
+                <p class="parrafo-modulo">Disfruta de toda la música, estamos trabajando para brindarte la mejor experiencia y para que disfrutes de todo nuestro contenido.</p>
+            </div>
+        </aside>
+        
+        <!-- HACEMOS USO DE LA ETIQUETA MAIN PARA APROVECHAR SU USO SEMÁNTICO, ACA VA TODO EL CONTENIDO PRINCIPAL -->
+        <main>
+    
+            <!-- LISTA DE REPRODUCCION REGGAETON -->
+            <div class="lista-reproduccion-reggaeton inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/reggaeton.jpg" alt="Reggaeton">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Reggaeton</h2>
+                        <p class="descripcion-genero">La mejor música para escuchar y bailar</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id1" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Amarillo</p>
+                    <p class="nombre-artista">J Balvin</p>
+                    <p class="duracion">2:45</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id2" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Hawuai</p>
+                    <p class="nombre-artista">Maluma</p>
+                    <p class="duracion">3:18</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id3" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Mix Reggaeton</p>
+                    <p class="nombre-artista">Varios artistas</p>
+                    <p class="duracion">8:00</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id4" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Otro trago</p>
+                    <p class="nombre-artista">Sech</p>
+                    <p class="duracion">3:50</p>
+               </div>
+            </div>
+    
+            <!-- LISTA DE REPRODUCCION ELECTRONICA -->
+            <div class="lista-reproduccion-electronica inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/electronica_cuadro.jpg" alt="Electronica">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Electronica</h2>
+                        <p class="descripcion-genero">La mejor Electrónica para todos los días</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id5" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Dezco ascend</p>
+                    <p class="nombre-artista">Official audio</p>
+                    <p class="duracion">3:20</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id6" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Electrónica mix</p>
+                    <p class="nombre-artista">Electrónica mix</p>
+                    <p class="duracion">8:50</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id7" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Que paso te asustate</p>
+                    <p class="nombre-artista">Dj Pilin electronic</p>
+                    <p class="duracion">2:43</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id8" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Played a live</p>
+                    <p class="nombre-artista">Safri Duo</p>
+                    <p class="duracion">3:12</p>
+                </div>
+            </div>
+    
+            <!-- LISTA DE REPRODUCCION BACHATA -->
+            <div class="lista-reproduccion-bachata inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/bachata.jpg" alt="Bachata">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Bachata</h2>
+                        <p class="descripcion-genero">La mejor Bachata romántica y de baile</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id9" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Eres mía</p>
+                    <p class="nombre-artista">Romeo Santos</p>
+                    <p class="duracion">4:52</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id10" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Escuchame</p>
+                    <p class="nombre-artista">José Fonseca</p>
+                    <p class="duracion">4:16</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id11" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">La Bachata</p>
+                    <p class="nombre-artista">Manuel Turizo</p>
+                    <p class="duracion">2:42</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id12" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Necio</p>
+                    <p class="nombre-artista">Romeo Santos</p>
+                    <p class="duracion">4:24</p>
+                </div> 
+            </div>
+    
+            <!-- LISTA DE REPRODUCCION VALLENATOS -->
+            <div class="lista-reproduccion-vallenato inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/vallenatos.jpg" alt="Vallenatos">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Vallenata</h2>
+                        <p class="descripcion-genero">Vallenatos Clásicos y modernos para disfrutar</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id13" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">No voy a llorar</p>
+                    <p class="nombre-artista">Los diablitos</p>
+                    <p class="duracion">4:43</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id14" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">No sé pedir perdon</p>
+                    <p class="nombre-artista">Rafael Orozco</p>
+                    <p class="duracion">4:42</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id15" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Si no me falla el corazón</p>
+                    <p class="nombre-artista">Los diablitos</p>
+                    <p class="duracion">4:53</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id16" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Tu asencia</p>
+                    <p class="nombre-artista">Pedro Arroyo</p>
+                    <p class="duracion">4:40</p>
+                </div>
+            </div>
+    
+            <!-- LISTA DE REPRODUCCION SALSA -->
+            <div class="lista-reproduccion-salsa inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/salsa.jpg" alt="Salsa">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Salsa</h2>
+                        <p class="descripcion-genero">Salsa Clásica y moderna para disfrutar y bailar</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id17" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Cómo te hago entender</p>
+                    <p class="nombre-artista">Roberto Roena</p>
+                    <p class="duracion">5:44</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id18" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Deseandote</p>
+                    <p class="nombre-artista">Frankie Ruiz</p>
+                    <p class="duracion">3:31</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id19" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Ni siquiera</p>
+                    <p class="nombre-artista">Antonio Cartagena</p>
+                    <p class="duracion">5:01</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id20" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Una mirada basto</p>
+                    <p class="nombre-artista">Grupo Niche</p>
+                    <p class="duracion">5:31</p>
+                </div>
+            </div>
+    
+            <!-- LISTA DE REPRODUCCION ROCK -->
+            <div class="lista-reproduccion-rock inactivo" >
+                <div class="contenedor-descripcion">
+                    <div class="contenedor-imagen">
+                        <img class="imagen-genero" src="./assets/img/rock_cuadro.jpg" alt="Rock">
+                    </div>
+                    <div class="descripciones">
+                        <p class="lista">Lista de reproducción</p>
+                        <h2 class="tipo-musica">Música Rock</h2>
+                        <p class="descripcion-genero">Rock en inglés y español</p>
+                    </div>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id21" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">ACDC rock N roll</p>
+                    <p class="nombre-artista">ACDC rock N roll</p>
+                    <p class="duracion">4:19</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id22" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">LMFAO party rock</p>
+                    <p class="nombre-artista">Anthem ft Lauren Bennett</p>
+                    <p class="duracion">6:15</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id23" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Lordi hard rock</p>
+                    <p class="nombre-artista">Hallelujah</p>
+                    <p class="duracion">3:07</p>
+                </div>
+                <div class="contenedor-lista-reproduccion">
+                    <img class="icono-play" id="id24" src="./assets/iconos/icono-play.png" width="30" height="30" alt="Play">
+                    <p class="nombre-cancion">Sol y Luna</p>
+                    <p class="nombre-artista">Akash</p>
+                    <p class="duracion">3:45</p>
+                </div>
+            </div>
+    
+            <!-- CREAMOS UN CONTENEDOR PRINCIPAL EN EL QUE SE VAN A UBICAR TODOS LOS GÉNEROS MUSICALES Y ALGUNAS DE LAS ULTIMAS CANCIONES EN REPRODUCCIÓN -->
+            <div class="contenedor-principal-inicio">
+                <!-- GÉNEROS -->
+                <h2>Géneros</h2>
+                    <section class="generos">
+    
+                        <!-- BOTON ATRAS DEL CARRUSEL -->
+                        <div class="contenedor-atras">
+                            <img class="atras" src="./assets/iconos/atras.png" width="40" height="40" alt="Atras">
+                        </div>
+    
+                        <!-- IMAGENES DEL CARRUSEL DE CANCIONES -->
+                        <div class="contenedor-carrusel">
+                            <div class="carrusel">
+                                <div id="img-1">
+                                    <img class="item-carrusel" src="./assets/img/electronica.jpg" width="260" height="160" alt="Electronica">
+                                    <h3 class="generos-nombre">Electrónica</h3>
+                                </div>
+                                <div id="img-2">
+                                    <img class="item-carrusel" src="./assets/img/reggaeton.jpg" width="260" height="160" alt="Reggaeton">
+                                    <h3 class="generos-nombre">Reggaeton</h3>
+                                </div>
+                                <div id="img-3">
+                                    <img class="item-carrusel" src="./assets/img/bachata.jpg" width="260" height="160" alt="Bachata">
+                                    <h3 class="generos-nombre">Bachata</h3>
+                                </div>
+                                <div id="img-4">
+                                    <img class="item-carrusel" src="./assets/img/vallenatos.jpg" width="260" height="160" alt="Vallenato">
+                                    <h3 class="generos-nombre">Vallenatos</h3>
+                                </div>
+                                <div id="img-5">
+                                    <img class="item-carrusel" src="./assets/img/salsa.jpg" width="260" height="160" alt="Salsa">
+                                    <h3 class="generos-nombre">Salsa</h3>
+                                </div>
+                                <div id="img-6">
+                                    <img class="item-carrusel" src="./assets/img/rock.jpg" width="260" height="160" alt="Rock">
+                                    <h3 class="generos-nombre">Rock</h3>
+                                </div> 
+                            </div>
+                        </div>
+    
+                        <!-- BOTON SIGUIENTE DEL CARRUSEL -->
+                        <div class="contenedor-siguiente">
+                            <img class="siguiente" src="./assets/iconos/siguiente.png" width="40" height="40" alt="Siguiente">
+                        </div>
+                    </section>
+    
+                    <!-- ETIQUETA AUDIO DONDE SE REPRODUCEN TODAS LAS CANCIONES -->
+                    <div class="contenedor-audio invisible">
+                          <audio class="sonido" controls>
+                             <source src="#" type="audio/mpeg">
+                             Soporte de audio
+                         </audio>
+                     </div> 
+                <!-- CANCIONES RECIENTES -->
+                <h2>Canciones recientes</h2>
+                <section class="canciones-recientes">
+                    <div>
+                        <img src="./assets/img/necio.jpg" width="130" height="100" alt="canción necio">
+                        <h4>Necio</h4>
+                        <h5>Romeo Santos</h5>
+                    </div>
+                    <div>
+                        <img src="./assets/img/amarillo.jpg" width="130" height="100" alt="canción amarillo">
+                        <h4>Amarillo</h4>
+                        <h5>J Balvin</h5></div>
+                    <div>
+                        <img src="./assets/img/deseandote.webp" width="130" height="100" alt="canción deseandote">
+                        <h4>Deseandote</h4>
+                        <h5>Frankie Ruiz</h5>
+                    </div>
+                    <div>
+                        <img src="./assets/img/sol_y_luna.jpg" width="130" height="100" alt="canción sol y luna">
+                        <h4>Sol y Luna</h4>
+                        <h5>Akash</h5>
+                    </div>
+                    <div>
+                        <img src="./assets/img/tu_ausencia.webp" width="130" height="100" alt="canción tu ausencia">
+                        <h4>Tu ausencia</h4>
+                        <h5>Pedro Arroyo</h5>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+     <!-- FOOTER -->
+            <footer class="contenedor-redes">
+                <ul>
+                    <li>
+                        <a target="_blank" href="/"><img src="./assets/iconos/icono-pinterest.png" width="40" title="icono pinterest" height="40" alt="icono pinterest"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/"><img src="./assets/iconos/instagram.png"
+                        width="40" title="icono instagram" height="40" alt="icono instagram"></a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="/"><img src="./assets/iconos/facebook.png" width="40" title="icono facebook" height="40" alt="icon facebook"></a>
+                    </li>
+                </ul> 
+                <p><a href="/">Términos de servicio</a></p>
+                <p><a href="/">Politica de privacidad</a></p>
+                <p><a href="/">Politica de cookies</a></p>
+                <p>Paseo de Extremadura, Madrid</p>
+                <p>© 2023 JG MUSIC</p>
+                <p>Versión: v1.0.0</p>
+            </footer>
+    <script src="./Js/main.js"></script>
+</body>
+</html>

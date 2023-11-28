@@ -1,0 +1,472 @@
+/* DECLARO VARIABLES DE LOS COLORES PARA FACILITAR EL TRABAJO Y CREAR UNIFORMIDAD */
+ :root {
+    --oscuro: #1a1927;
+    --oscuro-ligero: #20222e;
+    --blanco: #fafafa;
+    --blanco-secundario: #aaaaaa;
+    --boton:#00b0ff;
+}
+
+/* ELIMINAMOS MARGIN, PADDING Y BORDER QUE TIENE EL NAVEGADOR POR DEFECTO */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* PASAMOS EL TAMAÑO DE LA FUENTE DEL HTML A MEDIDAS 62.5% PARA TRABAJAR MAS SENCILLO CON MEDIDAS REM */
+html {
+    font-size: 62.5%;
+    font-family: 'Lora', serif;
+}
+
+html h2 {
+    font-weight: bolder;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   background-color: var(--oscuro); 
+}
+
+.contenedor-inicio {
+    display: flex;
+}
+
+.invisible {
+    visibility: hidden;
+}
+.inactivo {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+.activo {
+    display: block;
+}
+
+/* ESTILOS PARA HEADER MOBILE */
+header {
+    display: none;
+    width: 100%;
+    border-bottom: 1px solid var(--blanco-secundario);
+    height: 50px;
+}
+
+
+/* ESTILOS AL ASIDE PARA PANTALLAS GRANDES */
+aside {
+    width: 15%;
+    background-color: var(--oscuro-ligero);
+    border-right: 1px solid var(--blanco-secundario);
+}
+
+.contenedor-titulo {
+    display: flex;
+}
+
+.titulo {
+    color: var(--blanco);
+    margin: 20px 0 20px 15px;
+    cursor: pointer;
+}
+
+.icono-pause {
+    margin: 20px 0 20px 15px;
+    cursor: pointer;
+}
+
+.subtitulo {
+    color: var(--blanco-secundario);
+    margin: 0 0 20px 15px;
+    font-size: 2rem;
+}
+
+.contenedor-nav {
+    margin-left: 15px;
+    margin-bottom: 30px;
+}
+
+.contenedor-nav ul {
+    list-style: none;
+}
+
+.contenedor-nav ul li {
+    padding-bottom: 8px
+}
+
+.contenedor-nav ul li img {
+    margin-right: 3px;
+}
+
+.contenedor-nav ul li a {
+    text-decoration: none;
+    color: var(--blanco-secundario);
+    font-size: 1rem;
+}
+
+.contenedor-generos {
+    font-size: 1rem;
+    color: var(--blanco-secundario);
+}
+
+.contenedor-generos ul li {
+    padding-bottom: 2px;
+    margin: 0 0 10px 15px;
+    list-style: none;
+}
+
+.electronica, .reggaeton, .bachata, .vallenato, .salsa, .rock  {
+    cursor: pointer;
+}
+
+.modulo-texto {
+    margin:  20px 0 10px 15px;
+    color: var(--blanco-secundario);
+}
+
+.parrafo-modulo {
+    padding: 10px 15px;
+    line-height: 14px;
+    color: var(--blanco-secundario);
+}
+
+/* ESTILOS AL MAIN */
+main {
+    background-color: var(--oscuro) !important ;
+    width: 85%; 
+}
+
+.contenedor-principal-inicio {
+    width: 82%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+  }
+
+.contenedor-principal-inicio h2 {
+    color: var(--blanco);
+    margin: 30px 0 12px 0;
+    font-size: 2rem;
+}
+
+.generos {
+    display: flex;
+}
+
+.generos div img {
+    border-radius: 10px;
+    margin-left: 18px;
+    -webkit-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -2px rgba(0,0,0,0.75);
+}
+
+/* CARRUSEL */
+.contenedor-carrusel {
+    overflow: hidden;
+}
+
+.carrusel {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 900px;
+    transition: transform 3.0s ease-in-out;
+    cursor: pointer;
+}
+
+.contenedor-atras {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+
+.atras {
+    border: 0.5px solid var(--oscuro-ligero);
+}
+
+.contenedor-siguiente {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: filter 0.3s ease;
+}
+
+.siguiente {
+    border: 0.5px solid var(--oscuro-ligero);
+}
+
+.item-carrusel {
+    transition: all 300ms;
+}
+
+.item-carrusel:hover {
+    transform: scale(1.05);
+}
+.generos-nombre {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 4px;
+}
+
+.canciones-recientes {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+    gap: 18px;
+}
+
+.canciones-recientes div img {
+    border-radius: 10px;
+}
+
+.canciones-recientes div h4 {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 4px;
+}
+
+.canciones-recientes div h5 {
+    text-align: center;
+    color: var(--blanco-secundario);
+}
+
+/* ESTILOS A LAS LISTAS DE REPRODUCCION */
+.contenedor-lista-reproduccion{
+    display: flex;
+    width: 100%;
+    border: none;
+    border: 0.5px solid var(--oscuro-ligero);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenedor-lista-reproduccion:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contenedor-descripcion {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.contenedor-imagen {
+    width: 200px;
+    height: 200px;
+    margin: 60px 0 20px 60px;
+}
+
+.imagen-genero {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.descripciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 21px 0 20px 110px;
+}
+
+.icono-play {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.lista {
+    font-size: 1.1rem;
+    color:var(--blanco-secundario);
+}
+
+.tipo-musica {
+    color: var(--blanco);
+    font-size: 3rem;
+}
+
+.descripcion-genero {
+    font-size: 1.3rem;
+    color: var(--blanco-secundario);
+}
+
+.nombre-cancion {
+    font-size: 1.5rem;
+    padding: 16px;
+    color: var(--blanco);
+}
+
+.nombre-artista {
+    font-size: 1.5rem;
+    padding: 16px;
+    color: var(--blanco);
+}
+
+.duracion {
+    font-size: 1.5rem;
+    padding: 16px;
+    color: var(--blanco);
+}
+
+.contenedor-audio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 26px;
+    border-radius: 20px;
+    position: absolute;
+    top: 490px;
+}
+
+.sonido {
+    width: 600px;
+    -webkit-box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    -moz-box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    box-shadow: 7px 10px 19px 0px rgba(0,176,255,1);
+    border-radius: 40px;
+    border: 3px solid var(--boton);
+}
+
+/* FOOTER */
+.contenedor-redes {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--oscuro-ligero);
+    border-top: 1px solid var(--blanco-secundario);
+}
+
+.contenedor-redes li {
+    display: inline-block;
+    padding-top:30px;
+    margin-left: 10px;
+}
+
+.contenedor-redes p {
+    margin-top: 16px;
+    font-size: 12px;
+    color: var(--blanco);
+    line-height: 4px;
+    margin-bottom: 5px;
+}
+
+.contenedor-redes p a {
+    color: var(--blanco);
+} 
+
+/* @media PARA DISPOSITIVOS CON UN ANCHO MÁXIMO DE 1030px */
+@media (max-width: 1030px) {
+    .generos {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .contenedor-atras {
+        display: none;
+    }
+    .contenedor-siguiente {
+        display: none;
+    }
+    .carrusel {
+        width: 100%;
+         display: flex;
+        flex-wrap: wrap; 
+        justify-content: center;
+    }
+    .contenedor-principal-inicio {
+        height: auto;
+        width: 100%;
+    } 
+    .contenedor-audio {
+        position: fixed;
+        width: 90%;
+        top: 466px;
+    }
+} 
+
+/* @media PARA DISPOSITIVOS CON UN ANCHO MÁXIMO DE 707px */
+@media (max-width: 707px) {
+    aside {
+        display: none;
+    }
+    main {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+       position: absolute;  
+    }
+
+    .titulo-menu {
+        flex: 1;
+        text-align: center;
+        color: var(--blanco);
+    }
+
+    .titulo-menu h2 {
+        font-size: 1.9rem;
+    }
+
+    .contenedor-principal-inicio {
+       height: auto;
+    }
+
+    .contenedor-principal-inicio h2 {
+        margin-top: 50px;
+    }
+
+    .contenedor-nav-mobile {
+        flex-direction: column;
+        width: 150px;
+        height: auto;
+        border: 1px solid var(--blanco);
+        border-radius: 8px;
+        padding-top: 8px;
+        margin-top: 4px;
+        background-color: var(--oscuro-ligero);
+        position: relative;
+        top: 33px;  
+    }  
+}
+
+/* @media PARA DISPOSITIVOS CON UN ANCHO MÁXIMO DE 480px */
+@media (max-width: 480px) {
+    .contenedor-audio {
+        position: fixed;
+        width: 90%;
+        top: 750px;
+    }
+}
+
+/* @media PARA DISPOSITIVOS CON UN ANCHO MÁXIMO DE 340px */
+@media (max-width: 340px) {
+    .nombre-cancion {
+        font-size: 1.3rem;
+    }
+    .nombre-artista {
+        font-size: 1.3rem;
+    }
+    .duracion {
+        font-size: 1.3rem;
+    }
+}
+
+
+
+
+

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="Author" content="Julian Gomez">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../Css/presupuesto.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" sizes="192x192" href="../favicon.ico" type="image/ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,400;1,600&display=swap" rel="stylesheet">
+    <title>Presupuesto</title>
+</head>
+<body>
+
+    <!-- TARJETAS DE PLANES DE SUBSCRIPCION -->
+    <div>
+        <div class="contenedor-principal-formulario">
+            <div class="contenedor-barra">
+                <h2><a href="../index.html">Ir a Inicio</a></h2>
+                <h2 class="titulo-registro">Regístrate en JG MUSIC</h2>
+            </div>
+            <h2 class="titulo-registro">Regístrate en JG MUSIC</h2>
+            <h2 class="titulo-registro">Regístrate en JG MUSIC</h2>
+            <div class="contenedor-tarjetas-planes">
+                <div class="tarjeta">
+                    <h2>Gratis</h2>
+                    <h4>Gratis</h4>
+                    <h4>0.00 €</h4>
+                </div>
+                <div class="tarjeta">
+                    <h2>Básico</h2>
+                    <div>
+                        <h4>Tres meses</h4>
+                        <h4>20.00 €</h4>
+                    </div>
+                    <div>
+                        <h4>Seis meses</h4>
+                        <h4>30.00 €</h4>
+                    </div>
+                    <div>
+                        <h4>Doce meses</h4>
+                        <h4>50.00 €</h4>
+                    </div>
+                </div>
+                <div class="tarjeta">
+                    <h2>Premium</h2>
+                    <div>
+                        <h4>Tres meses</h4>
+                        <h4>30.00 €</h4>
+                    </div>
+                    <div>
+                        <h4>Seis meses</h4>
+                        <h4>50.00 €</h4>
+                    </div>
+                    <div>
+                        <h4>Doce meses</h4>
+                        <h4>90.00 €</h4>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        
+        <!-- FORMULARIO DE SUBCRIPCION -->
+        <div class="contenedor-formulario">
+            <form action="conexion.php" method="post" id="formulario">
+                <div class="campo">
+                    <label for="nombre-usuario">Nombre</label>
+                    <input type="text" placeholder="Nombre" required name="nombre-usuario" id="nombre-usuario">
+                </div>
+                <div class="campo">
+                    <label for="apellidos-usuario">Apellidos</label>
+                    <input type="text" placeholder="Apellidos" required name="apellidos-usuario" id="apellidos-usuario">
+                    </div>
+                <div class="campo">
+                    <label for="telefono-usuario">Teléfono</label>
+                    <input type="text" placeholder="Teléfono" required name="telefono-usuario" id="telefono-usuario">
+                </div> 
+                <div class="campo">
+                    <label for="email-usuario">Email</label>
+                    <input type="text" placeholder="Correo Electrónico" required name="email-usuario" id="email-usuario">
+                </div> 
+
+                <!-- CAMPOS DE ELEGIR PLAN, TIEMPO Y EXTRAS -->
+                <div class="campo">
+                    <label for="elige-plan">Elige un plan</label>
+                    <select name="elige-plan" id="elige-plan">
+                        <option value="">Selecciona un plan</option>
+                        <option value="Gratis">Gratis</option>
+                        <option value="Básico">Básico</option>
+                        <option value="Premium">Premium</option>
+                    </select>
+                </div>
+                <div class="campo">
+                    <label for="tiempo-plan">Tiempo de duración del plan</label>
+                    <select name="tiempo-plan" id="tiempo-plan" >
+                        <option value="3 Meses">3 Meses</option>
+                        <option value="6 Meses">6 Meses</option>
+                        <option value="12 Meses">12 Meses</option>
+                    </select>
+                </div>
+                <div class="campo-extras">
+                    <div>
+                        <label>Elige extras para tu plan</label>
+                    </div>
+                    <div class="extras-check">
+                        <label>Descargar Música x 3€ <input type="checkbox" id="descargar-musica"></label> 
+                        <label>Lista de reproducción x 3€<input type="checkbox" id="lista-reproduccion"></label>
+                        <label>Escucha sin internet x 3€<input type="checkbox" id="sin-internet"></label>
+                    </div>
+                </div>
+                
+                <!-- CAMPOS DE PRESUPUESTO -->
+                <div class="campo">
+                    <label for="presupuesto-estimado">Presupuesto Estimado</label>
+                    <input type="text" name="presupuesto-estimado" id="presupuesto-estimado" readonly>
+                </div>
+                <div class="campo-total">
+                    <label for="presupuesto-total">Presupuesto Total</label>
+                    <input type="text" name="presupuesto-total" id="presupuesto-total" readonly>
+                </div>
+                
+                <!-- ACEPTACION DE PRIVACIDAD -->
+                <div class="politicas">
+                    <label for="privacidad">He leído la política de privacidad</label>
+                    <input type="checkbox" name="privacidad" id="privacidad">
+                </div>
+    
+                <!-- BOTONES DE ENVIAR Y REINICIAR FORMULARIO -->
+                <div class="contenedor-botones">
+                    <button type="reset">Borrar</button> 
+                    <button onclick="validarFormulario(this.form)">Enviar</button>  
+                </div>
+            </form>
+        </div>
+    </div>
+    
+     <!-- FOOTER -->
+     <footer class="contenedor-redes">
+        <ul>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/icono-pinterest.png" width="40" title="icono pinterest" height="40" alt="icono pinterest"></a>
+            </li>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/instagram.png"
+                width="40" title="icono instagram" height="40" alt="icono instagram"></a>
+            </li>
+            <li>
+                <a target="_blank" href="/"><img src="../assets/iconos/facebook.png" width="40" title="icono facebook" height="40" alt="icono facebook"></a>
+            </li>
+        </ul> 
+        <p><a href="/">Términos de servicio</a></p>
+        <p><a href="/">Politica de privacidad</a></p>
+        <p><a href="/">Politica de cookies</a></p>
+        <p>Paseo de Extremadura, Madrid</p>
+        <p>© 2023 JG MUSIC</p>
+        <p>Versión: v1.0.0</p>
+    </footer>
+    <script src="../Js/presupuesto.js"></script>
+</body>
+</html>
